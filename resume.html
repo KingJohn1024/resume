@@ -1,31 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-      		<style media = "all">
-         		h1 {
-            			margin-left: 30px;
-         		}
+      		<style media ='all'>
+			@page {
+				size: letter;
+			        margin: 0mm; /* Set margin on each page */
+			}
+			* {font-family: Georgia, serif;}
+			body { margin: 0px; padding: 0px; }
+			# div { border: 1px solid black; }
+			#TitleBlock { background-color: lightblue; height: 175px;  display: flex; flex-direction: column; align-items: center; justify-content: center; } 
+			#TitleName { font-size: 36px; font-weight: bold; display: inline-block; white-space: nowrap; } 
+			#TitleAddress { font-size: 22px; display: inline-block; white-space: nowrap; }
+			#TitleContact { font-size: 20px; display: inline-block; white-space: nowrap; }
+			#SkillsBlock { display: inline; }
+			.Header { font-size: 16px; font-weight: bold; text-decoration: underline; display: inline; }
+			.SkillHeader {font-weight: bold; display: inline; }
+			#Content { margin: 10px; }
       		</style>
 		<title>John King Resume</title>
 	</head>
 	<body>
 	<div id='TitleBlock'>
 		<div id='TitleName'>JOHN C KING</div>
-		<div id='TitleAddress'>7 Vicksburg St * Boston, MA 02127</div>
-		<div id='TitleContact'><a href='mailto:jking@mactruck.net'>jking@mactruck.net</a></div>
-	</div>
-	<hr />
-	<br />
-	<div id='ObjectiveBlock'>
-		<div id='ObjectiveHeader'>Objective:</div>
-		<div>Leverage technical skills and financial knowledge while performing quantitative portfolio management and construction.  Maintain and enhance existing strategies as well as prototype and develop new ones.</div>
+		<div id='TitleAddress'>7 Vicksburg St | Boston, MA 02127</div>
+		<div id='TitleContact'>
+			<a href='mailto:jking@mactruck.net'>jking@mactruck.net</a> | 
+			<a href='https://github.com/KingJohn1024'>https://github.com/KingJohn102</a> | 
+			617-909-8404
+		</div>
 	</div>
 	<br />
-	<div id='SkillsBlock'>
-		<div class='Header'>Skills:</div>
-		<ul>
-			<li>Testing</li>
-		</ul>
+	<div id='Content'>
+		<div id='ObjectiveBlock'>
+			<div class='Header'>Objective:</div>
+			<div>Leverage technical skills and financial knowledge while performing quantitative portfolio management and construction.  Maintain and enhance existing strategies as well as prototype and develop new ones.</div>
+		</div>
+		<br />
+		<div id='SkillsBlock'>
+			<div class='Header'>Skills:</div>
+			<ul>
+				<li><div class='SkillHeader'>Datasets</div>: Vendor data, Security master & market data, optimziation, trading, performance reporting</li>
+				<li><div class='SkillHeader'>Finance Tools</div>: Chares River OMS, Blomberg Terminal, DAP / SAPI, TR QAI</li>
+				<li><div class='SkillHeader'>Databases / Data Stores</div>: Microsoft SQL Server, Snowflake, MySQL, REdis, MongoDB</li>
+				<li><div class='SkillHeader'>Programming</div>: Pyton (pandas, numpy, matplotlib, ntlk), C#, T-SQL, Tableau, JavaScript, CSS, HTML5, D3.js</li>
+				<li><div class='SkillHeader'>Frameworks</div>: Django, Tornado, Angular</li>
+			</ul>
+		</div>
 	</div>
 	</body>
 </html>
