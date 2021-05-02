@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
       		<style media ='all'>
-			@page {
-				size: letter;
-			        margin: 0mm; /* Set margin on each page */
-			}
+			/* Ensure page settings are respected when converting HTML to PDF via weasyprint */
+			@page { size: letter; margin: 0mm; }
 			* {font-family: Georgia, serif;}
 			body { margin: 0px; padding: 0px; }
 			# div { border: 1px solid black; }
@@ -15,18 +15,18 @@
 			#TitleContact { font-size: 20px; display: inline-block; white-space: nowrap; }
 			#SkillsBlock { display: inline; }
 			.Header { font-size: 16px; font-weight: bold; text-decoration: underline; display: inline; }
-			.SkillHeader {font-weight: bold; display: inline; }
+			.SubHeader {font-weight: bold; display: inline; }
 			#Content { margin: 10px; }
       		</style>
 		<title>John King Resume</title>
 	</head>
 	<body>
 	<div id='TitleBlock'>
-		<div id='TitleName'>JOHN C KING</div>
-		<div id='TitleAddress'>7 Vicksburg St | Boston, MA 02127</div>
+		<div id='TitleName'>JOHN KING</div>
+		<div id='TitleAddress'>7 Vicksburg St Boston, MA 02127</div>
 		<div id='TitleContact'>
 			<a href='mailto:jking@mactruck.net'>jking@mactruck.net</a> | 
-			<a href='https://github.com/KingJohn1024'>https://github.com/KingJohn102</a> | 
+			<a href='https://github.com/KingJohn1024'>https://github.com/KingJohn1024</a> | 
 			617-909-8404
 		</div>
 	</div>
@@ -40,11 +40,21 @@
 		<div id='SkillsBlock'>
 			<div class='Header'>Skills:</div>
 			<ul>
-				<li><div class='SkillHeader'>Datasets</div>: Vendor data, Security master & market data, optimziation, trading, performance reporting</li>
-				<li><div class='SkillHeader'>Finance Tools</div>: Chares River OMS, Blomberg Terminal, DAP / SAPI, TR QAI</li>
-				<li><div class='SkillHeader'>Databases / Data Stores</div>: Microsoft SQL Server, Snowflake, MySQL, REdis, MongoDB</li>
-				<li><div class='SkillHeader'>Programming</div>: Pyton (pandas, numpy, matplotlib, ntlk), C#, T-SQL, Tableau, JavaScript, CSS, HTML5, D3.js</li>
-				<li><div class='SkillHeader'>Frameworks</div>: Django, Tornado, Angular</li>
+				<li><div class='SubHeader'>Datasets</div>: Vendor data, Security master & market data, optimziation, trading, performance reporting</li>
+				<li><div class='SubHeader'>Finance Tools</div>: Chares River OMS, Blomberg Terminal, DAP / SAPI, TR QAI</li>
+				<li><div class='SubHeader'>Databases / Data Stores</div>: Microsoft SQL Server, Snowflake, MySQL, REdis, MongoDB</li>
+				<li><div class='SubHeader'>Programming</div>: Pyton (pandas, numpy, matplotlib), C#, T-SQL, Tableau, JavaScript, CSS, HTML5, D3.js</li>
+				<li><div class='SubHeader'>Frameworks</div>: Django, Tornado, Angular</li>
+			</ul>
+		</div>
+		<br />
+		<div id='ExperienceBlock'>
+			<div class='Header'>Experience:</div>
+			<ul>
+				<li><div class='SubHeader'>2016 - Present</div>: Acadian Asset Management - Model Integration (Embedded within the Equity Alternatives team)</li>
+				<i class="fas fa-angle-double-right"></i><span>    VP, Lead Analyst, Integration (2020 - Present)</span><br />
+				<i class="fas fa-angle-double-right"></i><span>    VP, Senior Analyst, Integration (2019 - 2020)</span><br />
+				<i class="fas fa-angle-double-right"></i><span>    AVP, Senior Analyst, Integration (2017 - 2019)</span>
 			</ul>
 		</div>
 	</div>
