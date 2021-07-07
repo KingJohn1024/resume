@@ -17,7 +17,8 @@
 			#SkillsBlock { display: inline; }
 			.Header { font-size: 16px; font-weight: bold; text-decoration: underline; display: inline; }
 			.SubHeader {font-weight: bold; display: inline; }
-			.IndentText { text-indent: 1em; display:inline-block; }
+			.IndentText { text-indent: 1em; display: inline-block; }
+			.SubIndentText { text-indent: 2em; display: inline-block; }
 			#Content { margin: 20px; }
 
       		</style>
@@ -37,17 +38,17 @@
 	<div id='Content'>
 		<div id='ObjectiveBlock'>
 			<div class='Header'>Objective:</div>
-			<div>Leverage technical skills and financial knowledge while performing quantitative portfolio management and construction.  Maintain and enhance existing strategies as well as prototype and develop new ones.</div>
+			<div>Leverage technical skills, analytics and financial knowledge while performing quantitative portfolio management.  Focused on coverting research into actionable strategies with high quality results.</div>
 		</div>
 		<br />
 		<div id='SkillsBlock'>
 			<div class='Header'>Skills:</div>
 			<ul>
-				<li><div class='SubHeader'>Datasets</div>: Vendor data, security master & market data, optimziation, trading, performance reporting</li>
-				<li><div class='SubHeader'>Finance Tools</div>: Chares River OMS, Blomberg Terminal, DAP / SAPI, TR QAI</li>
+				<li><div class='SubHeader'>Datasets</div>: Fundamental, analysts & market data, optimziation, trading, performance reporting</li>
+				<li><div class='SubHeader'>Finance Tools</div>: Chares River OMS, Blomberg Terminal, DAPI / SAPI, Refinitiv Elektron & QAI</li>
 				<li><div class='SubHeader'>Databases / Data Stores</div>: Microsoft SQL Server, Snowflake, MySQL, REdis, MongoDB</li>
-				<li><div class='SubHeader'>Programming</div>: Pyton (pandas, numpy, matplotlib), R, SPSS, C#, T-SQL, Tableau, JavaScript, CSS, HTML5</li>
-				<li><div class='SubHeader'>Frameworks</div>: Django, Tornado, Angular</li>
+				<li><div class='SubHeader'>Programming</div>: Python, R, C#, T-SQL, Tableau, SPSS, JavaScript, CSS, HTML5</li>
+				<li><div class='SubHeader'>Analytics</div>: Regression, outlier detection, classification, clustering, dimensionality reduction</li>
 			</ul>
 		</div>
 		<div id='ExperienceBlock'>
@@ -58,15 +59,31 @@
 					<i class="fas fa-angle-double-right"></i><span class='IndentText'>VP, Lead Analyst, Integration (2020 - Present)</span><br />
 					<i class="fas fa-angle-double-right"></i><span class='IndentText'>VP, Senior Analyst, Integration (2019 - 2020)</span><br />
 					<i class="fas fa-angle-double-right"></i><span class='IndentText'>AVP, Senior Analyst, Integration (2017 - 2019)</span><br /><br />
-					<span>I built and currently maintain a large data cache that is used as the foundation for portfolio reporting, analytics and research by the Equity Alternatives team.  This data is part of a larger framework that provides methods for data access, protoflio monitoring and reporting as well as research tools.  I've built numerous reports leveraging this technology covering - factor returns, opimization & turnover, trading, positioning, custom attrbution, cost control and market impact.  Auomated reports are used daily to monitor espooures and esnure the systematic process is operating erro free.  Research has been performed on account universe definition, risk trades, alpha and risk decomposition as well as alternate data sources.  Currently, I've been direclty involved in the details of implementing two new stratgies, whhich has involved 3rd party bendor data analysis, procurment, mapping and implimentation of investment ideas via code.  I've been building a platform to streamline the process of idea generation to paper portoflio to live trading.  This piopeline includes portfolio optimzation leveraging cvxpy, trade automation via CRD, position tracing via Bloomberg PORT and SAPI.  Finally, utilizing the existing Equity Alternatives analytics and reporting infrastructure to measure and monitor the portoflios.</span>
+					<ul>
+						<li>Built and maintain a large data cache and abstration layer that exposures universes and data elements</li>
+						<li>Technical lead within the group with stewardship responsabilities over the equity alternatives Python framework</li>
+						<li>Design and build of portfolio objects with collections of reusable analytic functions for centralized anlysis</li>
+						<li>Directly involved with new strategy design, testing and implimentation - from conception to live trading</li>
+						<li>Perform research on alpha & risk factors, trading and alternative data sets as well as near-term trading signals</li>
+						<li>Developed and maintained a nightly job cycle with automated reporting on exposures, positioning, attribution and more</li>
+						<li>Work directly with the interanl trading desk while rebalancing, including monitoring liquidity events, hedging requirments and other market impacts</li>
+						<li>Designed bidirectional integration with Bloomberg exposing functionality on the terminal and through Server API</li>
+					</ul>
 				</li>
 				<br />
 				<div class="pagebreak"> </div>
 				<li>
 					<div class='SubHeader'>2012 - 2017</div>: Acadian Asset Management - Information Technology<br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>AVP, Manager, Software Engineering (2014 - 2017)</span><br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Sofware Engineer (2021 - 2014)</span><br /><br />
-					<span>In this role my experience at Acadian included running a software enginerring team consisting of 7 developers, interfacing directly with business customers and delivering on large transformational projects such as a CRIMS implementation for trading.  I was intimately involved with the details of Acadian's trading life cycle and delivered both workflow and technilogical enhancements.  I've completed numerous projects including Bloomberg intrday data, TR Global Filings (ingestion, indexing and mapping(, borrow cost reporting, etc.  In the past I have performed data sourcing, supporting and validating new and existing data into the core Operational Data Store, Data Mart staring & associated Data Marts.  Additionally, I supported the client reporting and analytic groups with change requests, enhancements and provided optimized datasets for visualization via Datawatch interactive dashboards.  I also spent time performing performance tuning on complex SQL statements and SSIS packages.  I have designed, built and implemented a cross-subject Data Mart spanning holdings, returns, valuation and risk metrics at a collated issue level in a shared dimension start shcmea model.  This mart is the data source for a set of dynamic web visualizations utilizing D3.js and supporting custom drill to detail functionality.  I have developed mutliple reusable C# class libraries for aprallel bulk loading of partitioned tables, free-form text matching and automated unit testing.  I have built custom C# applications to perform bulk SSIS package changes, Perforce automation, visual lineage tracking and more.
+					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Sofware Engineer (2012 - 2014)</span><br /><br />
+					<ul>
+						<li>Lead a software engineering team constiting of 7 developers focused on large tranformational projects</li>
+						<li>Interacted with and provided technical support to the front office research, trading and portfolio managmenet functions</li>
+						<li>Intimately involved in the documentation and reengineering of the trading life cycle</li>
+						<li>Integrated new data with existing sources including semi-structured broker and text data</li>		
+						<li>Built and maintained an Operational Data Store and Data Marts to support reporting and analytics</li>
+						<li>Led modernization efforts to standardize data access and adopt new tools for visuzalization and analytics</li>
+					</ul>
 				</li>
 				<br />
 				<liv>
@@ -74,17 +91,28 @@
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Manager - Global Data Warehousing (2011 - 2012)</span><br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Data Warehouse Developer - Global Data Warehousing (2010 - 2011)</span></br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Data Warehouse Developer - Global Data Warehousing (2008 - 2010)</span><br /><br />
-					<span>My last 2 years at Monster found me transitioning to a lead developer role and then to a management position.  I spent a large amoutn of my time attending meetings, transferring business requests into requirements, designing data models and loading strategies.  I was responsible for a global development team consisting of 12 developers and reported to the director of the global data team.</span><br />
-					<span>While at Monster I was responsible for sourcing new and existing data to the core data warehouse and ancillary data marts utilizing DTS and SSIS ETL technologies.  The loads I created and maintained ranged from basic bulk to complex incremental (SCD I & SCD II) and aggreate varieties in a VLDB environment.  All ETLs were developed using dynamic environment techniques to ensure that they could be quickly moved between environments to support a robust SDLC.  All database object creation and changes ...</span>
+					<ul>
+						<li>Experience spanned individual contributor, team lead to managing 12 devlopers globally in support of the global data team</li>
+						<li>Built and maintained Operational Data Stores, Data Warehouses and Data Marts to support both internal and customer facing analytics</li>
+						<li>Designed large scale transactional data processing pipelines to injest data in near real-time</li>
+						<li>Leveraged knowledge of the Internet, Advertising and Fees business to successfully model data in support of analytics</li>
+						<li>Followed a rigid product release cycle with classic SDLC processes, automated code testing and promotion</li>
+					</ul>
 				</li>
 				<br /><br />
 				<li>
 					<div class='SubHeader'>2000 - 2008</div>: Southworth International<br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Applications / Report Developer II (2007 - 2008)</span><br />
+					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Applications Developer II (2007 - 2008)</span><br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Developer / Administration (2005 - 2006)</span><br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Systems Technician (2002 - 2004)</span><br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Systems Technician I (2000 - 2002)</span><br />
-					<span>.....</span>
+					<br />	
+					<ul>
+						<li>Directly responsible for the technical infrastructure covering multiply sites across the country</li>
+						<li>Built and maintained custom software to integrate ERP data directly into CAD systems</li>
+						<li>Developed a data warehouse system to centralize and automate reporting and ad-hoc analytics</li>
+						<li>Delivered automation software to multiple business units to streamline processes and imporve data capture</li>
+					</ul>
 				</li>
 			</ul>
 			<div class='Header'>Education:</div>
