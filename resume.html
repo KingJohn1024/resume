@@ -5,17 +5,18 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
       		<style media ='all'>
 			/* Ensure page settings are respected when converting HTML to PDF via weasyprint */
-			@page { size: letter; margin: 0mm; }
-			@media print { .pagebreak { page-break-before: always; margin-top: 40px;} }
+			@page { size: letter; margin: 0mm;}
+			@media print { .pagebreak { page-break-before: always; margin-top: 50px;} html {font-size: 14px; padding: 0;} }
 			* {font-family: Georgia, serif;}
 			body { margin: 0px; padding: 0px; }
-			#TitleBlock { background-color: lightblue; height: 175px;  display: flex; flex-direction: column; align-items: center; justify-content: center;} 
+			#TitleBlock { background-color: lightblue; height: 145px;  display: flex; flex-direction: column; align-items: center; justify-content: center;} 
 			#TitleName { font-size: 36px; font-weight: bold; display: inline-block; white-space: nowrap; padding: 6px; } 
 			#TitleAddress { font-size: 22px; display: inline-block; white-space: nowrap; padding: 6px; }
 			#TitleContact { font-size: 20px; display: inline-block; white-space: nowrap; padding: 6px; }
 			#SkillsBlock { display: inline; }
 			.Header { font-size: 16px; font-weight: bold; text-decoration: underline; display: inline; }
 			.SubHeader {font-weight: bold; display: inline; }
+			.SkillHeader { font-style: italic; }
 			.IndentText { text-indent: 1em; display: inline-block; }
 			.SubIndentText { text-indent: 2em; display: inline-block; }
 			#Content { margin: 20px; }
@@ -26,29 +27,39 @@
 	<body>
 	<div id='TitleBlock'>
 		<div id='TitleName'>JOHN KING</div>
-		<div id='TitleAddress'>4 Studley Farm Rd Scituate, MA 02066</div>
 		<div id='TitleContact'>
 			<a href='mailto:jking@mactruck.net'>jking@datadecimal.com</a> | 
-			<a href='https://github.com/KingJohn1024'>https://github.com/KingJohn1024</a> | 
-			617-909-8404
+			<a href='https://github.com/KingJohn1024'>https://github.com/KingJohn1024</a>
+		</div>
+		<div id="'TitleAddress">
+			617-909-8404 |
+			Scituate, MA
 		</div>
 	</div>
 	<br />
 	<div id='Content'>
 		<div id='ObjectiveBlock'>
 			<div class='Header'>Objective:</div>
-			<div>Leverage technical skills, analytics and financial knowledge while performing quantitative portfolio management.  Focused on converting research into actionable strategies with high quality results.</div>
+			<div>Quantitative Portfolio manager with deep expertise in equity strategies, risk modeling, data data-driven alpha research. Seeking to contribute to a collaborative investment team where research rigor and implementation discipline are valued.</div>
 		</div>
 		<br />
 		<div id='SkillsBlock'>
-			<div class='Header'>Skills:</div>
+			 <div class='SubHeader'>Technical Skills:</div>
 			<ul>
-				<li><div class='SubHeader'>Datasets</div>: Fundamental, analysts & market data, optimization, trading, performance reporting</li>
-				<li><div class='SubHeader'>Finance Tools</div>: Chares River OMS, Blomberg Terminal, DAPI / SAPI, Refinitiv Elektron & QAI</li>
-				<li><div class='SubHeader'>Databases / Data Stores</div>: Microsoft SQL Server, Snowflake, MySQL, REdis, MongoDB</li>
-				<li><div class='SubHeader'>Programming</div>: Python, R, C#, T-SQL, Tableau, SPSS, JavaScript, CSS, HTML5</li>
-				<li><div class='SubHeader'>Analytics</div>: Regression, outlier detection, classification, clustering, dimensionality reduction</li>
+				<li><span class='SkillHeader'>Programming</span> - Python (Pandas, NumPy, Scikit-learn), R, C#, T-SQL, JavaScript, HTML/CSS</li>
+				<li><span class='SkillHeader'>Data Engineering</span> - SQL Server, Snowflake, Redis, MongoDB, MySQL</li>
+				<li><span class='SkillHeader'>Visualization</span> - Tableau, Matplotlib, Plotly</li>
 			</ul>
+			<div class='SubHeader'>Financial/Quant Tools:</div>
+			<ul>
+				<li>Charles River OMS, Bloomberg Terminal (DAPI/SAPI), Refinitiv Elektron/QAI</li>
+				<li>Custom Optimization Frameworks (Cvxpy, Gurobi), Multi-Prime Portfolio Management</li>
+			</ul>
+			<div class='SubHeader'>Quantitative Analytics:</div>
+			<ul>
+				<li>Time Series Analysis, Cross-sectional Regression, Clustering, Dimensionality Reduction, Outlier Detection</li>
+			</ul>
+
 		</div>
 		<div id='ExperienceBlock'>
 			<div class='Header'>Experience:</div>
@@ -59,8 +70,9 @@
 					<ul>
 						<li>Responsible for the daily management of a large 5x leveraged long/short equity portfolio</li>
 						<li>Build, maintain and enhance custom optimization framework to manage complex multi-prime, leveraged, long/short portfolios</li>
+						<li>Research, develop and validate custom built risk models tailored for risk management in bespoke equity strategies</li>
 						<li>Directly interface with the internal trading desk to ensure trading objectives are met while minimizing cost</li>
-						<li>Collaborate with the Alterative Treasury Operations group on fund management, broker relationships and cost controls</li>
+						<li>Collaborate with the Alternative Treasury Operations group on fund management, broker relationships and cost controls</li>
 						<li>Manage individual sleeve portfolios as part of a larger multi-strat book</li>
 						<li>Work as part of team that oversees the entire multi-strat fund</li>
 						<li>Perform investment research to enhance the process, fund performance and idea generation</li>
@@ -73,24 +85,24 @@
 					<i class="fas fa-angle-double-right"></i><span class='IndentText'>VP, Senior Analyst, Integration (2019 - 2020)</span><br />
 					<i class="fas fa-angle-double-right"></i><span class='IndentText'>AVP, Senior Analyst, Integration (2017 - 2019)</span><br /><br />
 					<ul>
-						<li>Built and maintain a large data cache and abstraction layer that exposes universes and data elements</li>
+						<li>Built and maintained a large data cache and abstraction layer that exposes universes and data elements</li>
 						<li>Technical lead within the group with stewardship responsibilities over the equity alternatives Python framework</li>
-						<li>Design and build of portfolio objects with collections of reusable analytic functions for centralized analysis</li>
+						<li>Designed and built portfolio objects with collections of reusable analytic functions for centralized analysis</li>
 						<li>Directly involved with new strategy design, testing and implementation - from conception to live trading</li>
 						<li>Perform research on alpha & risk factors, trading and alternative data sets as well as near-term trading signals</li>
 						<li>Developed and maintained a nightly job cycle with automated reporting on exposures, positioning, attribution and more</li>
-						<div class="pagebreak"> </div>
 						<li>Work directly with the internal trading desk while rebalancing, including monitoring liquidity events, hedging requirements and other market impacts</li>
 						<li>Designed bidirectional integration with Bloomberg exposing functionality on the terminal and through Server API</li>
 					</ul>
 				</li>
 				<br />
+				<div class="pagebreak"> </div>
 				<li>
 					<div class='SubHeader'>2012 - 2017</div>: Acadian Asset Management - Information Technology<br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>AVP, Manager, Software Engineering (2014 - 2017)</span><br />
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Software Engineer (2012 - 2014)</span><br /><br />
 					<ul>
-						<li>Lead a software engineering team constating of 7 developers focused on large transformational projects</li>
+						<li>Led a software engineering team constating of 7 developers focused on large transformational projects</li>
 						<li>Interacted with and provided technical support to the front office research, trading and portfolio management functions</li>
 						<li>Intimately involved in the documentation and reengineering of the trading life cycle</li>
 						<li>Integrated new data with existing sources including semi-structured broker and text data</li>		
@@ -121,7 +133,7 @@
 					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Systems Technician I (2000 - 2002)</span><br />
 					<br />	
 					<ul>
-						<li>Directly responsible for the technical infrastructure covering multiply sites across the country</li>
+						<li>Directly responsible for the technical infrastructure covering multiple sites across the country</li>
 						<li>Built and maintained custom software to integrate ERP data directly into CAD systems</li>
 						<li>Developed a Data Warehouse system to centralize and automate reporting and ad-hoc analytics</li>
 						<li>Delivered automation software to multiple business units to streamline processes and improve data capture</li>
@@ -131,11 +143,9 @@
 			<div class='Header'>Education:</div>
 			<ul>
 				<li><div class='SubHeader'>2020 - 2023</div><span class='IndentText'>Northeastern University - Bachelor of Science - BS, Analytics</span></li>
-				<li><div class='SubHeader'>1998 - 2000</div><span class='IndentText'>SMTC - Associates Degree - Computer Technology</sapn></li>
+				<li><div class='SubHeader'>1998 - 2000</div><span class='IndentText'>SMTC - Associates Degree - AS, Computer Technology</sapn></li>
 				<li><div class='SubHeader'>1994 - 1998</div><span class='IndentText'>Cony High School</span></li>
 			</ul>
-			<div class='Header'>References:</div><br />
-			<span>Available upon request</span>
 		</div>
 	</div>
 	</body>
