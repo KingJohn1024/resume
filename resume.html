@@ -6,17 +6,29 @@
       		<style media ='all'>
 			/* Ensure page settings are respected when converting HTML to PDF via weasyprint */
 			@page { size: letter; margin: 0mm;}
-			@media print { .pagebreak { page-break-before: always; margin-top: 50px;} html {font-size: 14px; padding: 0;} }
+			@media print {
+				.pagebreak { page-break-before: always; margin-top: 50px;} 
+				#Content {line-height: 1.45;}
+				html {font-size: 12px; }
+				ul {margin-left: 0.5em; padding-left: .5em;}
+				li {margin-left: 0.25em; padding-left: .25em;}
+			}
 			* {font-family: Georgia, serif;}
 			body { margin: 0px; padding: 0px; }
-			#TitleBlock { background-color: lightblue; height: 145px;  display: flex; flex-direction: column; align-items: center; justify-content: center;} 
-			#TitleName { font-size: 36px; font-weight: bold; display: inline-block; white-space: nowrap; padding: 6px; } 
-			#TitleAddress { font-size: 22px; display: inline-block; white-space: nowrap; padding: 6px; }
-			#TitleContact { font-size: 20px; display: inline-block; white-space: nowrap; padding: 6px; }
+			#TitleBlock { background-color: lightblue; height: 90px;  display: flex; flex-direction: column; align-items: center; justify-content: center;} 
+			#TitleName { font-size: 28px; font-weight: bold; display: inline-block; white-space: nowrap; padding: 4px; } 
+			#TitleAddress { font-size: 14px; display: inline-block; white-space: nowrap; padding: 4px; }
+			#TitleContact { font-size: 12px; display: inline-block; white-space: nowrap; padding: 4px; }
 			#SkillsBlock { display: inline; }
-			.Header { font-size: 16px; font-weight: bold; text-decoration: underline; display: inline; }
+			.Header {
+				font-size: 16px;
+				font-weight: bold;
+				text-decoration: underline;
+				display: inline-block;   /* Changed from inline to inline-block */
+				margin-bottom: 0.3em;    /* Adds space after the header */
+			}
 			.SubHeader {font-weight: bold; display: inline; }
-			.SkillHeader { font-style: italic; }
+			.SkillHeader { font-weight: bold; }
 			.IndentText { text-indent: 1em; display: inline-block; }
 			.SubIndentText { text-indent: 2em; display: inline-block; }
 			#Content { margin: 20px; }
@@ -35,116 +47,83 @@
 			Scituate, MA
 		</div>
 	</div>
-	<br />
 	<div id='Content'>
 		<div id='ObjectiveBlock'>
-			<div class='Header'>Objective:</div>
-			<div>Quantitative portfolio manager with deep expertise in equity strategies, risk modeling, data data-driven alpha research. Seeking to contribute to a collaborative investment team where research rigor and implementation discipline are valued.</div>
+			<div class='Header'>Professional Summary:</div>
+			<div>Systematic equity researcher and portfolio manager with 10+ years' experience in quantitative research, 
+				risk modeling, alpha factor analysis, and portfolio optimization. Skilled in Python-based backtesting, 
+				statistical modeling, and data engineering for large-scale systematic equity strategies. Deep knowledge 
+				of factor models, risk premia, portfolio construction, and multi-prime long/short portfolio management. 
+				Seeking to contribute to a collaborative investment team with a focus on alpha generation and systematic 
+				strategy research.</div>
 		</div>
 		<br />
 		<div id='SkillsBlock'>
-			 <div class='SubHeader'>Technical Skills:</div>
+			<div class='Header'>Technical Skills:</div>
 			<ul>
-				<li><span class='SkillHeader'>Programming</span>: Python (Pandas, NumPy, Scikit-learn) | R | C# | T-SQL | JavaScript | HTML/CSS</li>
-				<li><span class='SkillHeader'>Data Engineering</span>: SQL Server | Snowflake | MySQL | MongoDB | Redis</li>
-				<li><span class='SkillHeader'>Visualization</span>: Tableau | Matplotlib | Plotly</li>
-				<li><span class='SkillHeader'>Tools</span>: AWS | Git | Linux | SLURM | Spark | Dask</li>
+				<li><span class='SkillHeader'>Programming & Data</span>: Python (Pandas, NumPy, Scikit-learn), R, SQL (T-SQL, MySQL, Snowflake), C#, MongoDB, Redis</li>
+				<li><span class='SkillHeader'>Quant & Modeling</span>: Cross-sectional regression, time series analysis, factor models, portfolio optimization (CVXPY, Gurobi), ML techniques (clustering, dimensionality reduction, anomaly detection)</li>
+				<li><span class='SkillHeader'>Financial Tools</span>: Axioma, Northfield, Bloomberg (API), Refinitiv QAI, Charles River OMS</li>
+				<li><span class='SkillHeader'>Data Engineering</span>: Spark, Dask, SLURM, AWS, ETL pipelines, real-time data ingestion</li>
+				<li><span class='SkillHeader'>Visualization & Reporting</span>: Tableau, Matplotlib, Plotly</li>
 			</ul>
-			<div class='SubHeader'>Financial/Quant Tools:</div>
-			<ul>
-				<li>Axioma, Northfield, Charles River OMS, Bloomberg Terminal (DAPI/SAPI), Refinitiv Elektron/QAI</li>
-				<li>Custom Optimization Frameworks (Cvxpy, Gurobi), Multi-Prime Portfolio Management</li>
-			</ul>
-			<div class='SubHeader'>Quantitative Analytics:</div>
-			<ul>
-				<li>Time Series Analysis, Cross-sectional Regression, Clustering, Dimensionality Reduction, Outlier Detection</li>
-			</ul>
-
 		</div>
 		<div id='ExperienceBlock'>
 			<div class='Header'>Experience:</div>
-			<ul>
-				<li>
-					<div class='SubHeader'>2022 - Present</div>: Acadian Asset Management - Equity Alternatives<br />
-					<i class="fas fa-angle-double-right"></i><span class='IndentText'>VP, Portfolio Manager, Equity Alternatives (2022 - Present)</span><br /><br />
+				<div>
+					<div class='SubHeader'>Acadian Asset Management - Equity Alternatives</div> | Boston, MA<br />
+					<div><span class='SkillHeader'>VP, Portfolio Manager </span><span> | 2022 - Present</span></div>
 					<ul>
-						<li>Responsible for the daily management of a large 5x leveraged long/short equity portfolio</li>
-						<li>Build, maintain and enhance custom optimization framework to manage complex multi-prime, leveraged, long/short portfolios</li>
-						<li>Research, develop and validate custom risk models tailored for risk management in bespoke equity strategies</li>
-						<li>Respond to client requests, craft tailored commentary and produce custom material covering complex strategies</li>
-						<li>Manage individual sleeve portfolios as well as particpating in the management of the entire multi-strategy fund</li>
-						<li>Perform investment research to enhance the process, fund performance and idea generation</li>
-						<li>Directly interface with the internal trading desk to ensure trading objectives are met while minimizing cost</li>
-						<li>Collaborate with Alternative Treasury Operations on fund management, broker relationships and cost controls</li>
+						<li>Designed and implemented systematic equity long/short strategies leveraging custom factor research and optimization.</li>
+						<li>Built proprietary risk models for portfolio construction, stress testing, and risk decomposition.</li>
+						<li>Developed Python-based backtesting and portfolio analytics frameworks supporting research and production trading.</li>
+						<li>Collaborated with trading and treasury teams to ensure execution efficiency and cost minimization.</li>
+						<li>Produced alpha attribution, factor exposures, and risk analytics for multi-prime leveraged portfolios</li>
 					</ul>
-				</li>
-				<br />
-				<li>
-					<div class='SubHeader'>2017 - 2022</div>: Acadian Asset Management - Model Integration (Embedded within the Equity Alternatives team)<br />
-					<i class="fas fa-angle-double-right"></i><span class='IndentText'>VP, Lead Analyst, Integration (2020 - 2022)</span><br />
-					<i class="fas fa-angle-double-right"></i><span class='IndentText'>VP, Senior Analyst, Integration (2019 - 2020)</span><br />
-					<i class="fas fa-angle-double-right"></i><span class='IndentText'>AVP, Senior Analyst, Integration (2017 - 2019)</span><br /><br />
+					<div class='SubHeader'>Acadian Asset Management - Model Integration (Equity Alternatives)</div> | Boston, MA<br />
+					<div>
+						<span class='SkillHeader'>AVP, Senior Analyst - VP, Senior Analyst - VP, Lead Analyst</span>
+						<span> | 2017 - 2022</span>
+					</div>
 					<ul>
-						<li>Built and maintained a large data cache and abstraction layer that exposes universes and data elements</li>
-						<li>Technical lead within the group with stewardship responsibilities over the equity alternatives Python framework</li>
-						<li>Designed and built portfolio objects with collections of reusable analytic functions for centralized analysis</li>
-						<li>Directly involved with new strategy design, testing and implementation - from conception to live trading</li>
-						<li>Perform research on alpha & risk factors, trading and alternative data sets as well as near-term trading signals</li>
-						<li>Developed and maintained a nightly job cycle with automated reporting on exposures, positioning, attribution, and other key portfolio metrics</li>
-						<li>Work directly with the internal trading desk while rebalancing, including monitoring liquidity events, hedging requirements and other market impacts</li>
-						<li>Designed bidirectional integration with Bloomberg exposing functionality on the terminal and through Server API</li>
+						<li>Led development of Python research framework enabling signal research, portfolio analytics, and factor model testing.</li>
+						<li>Automated daily risk/position/exposure reporting with real-time integration to Bloomberg and internal trading systems.</li>
+						<li>Researched alpha & risk factors, alternative data signals, and short-term trading strategies for systematic portfolios.</li>
+						<li>Built and maintained data pipelines and abstraction layers for equity universes, factor data, and portfolio metrics.</li>
 					</ul>
-				</li>
-				<br />
-				<div class="pagebreak"> </div>
-				<li>
-					<div class='SubHeader'>2012 - 2017</div>: Acadian Asset Management - Information Technology<br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>AVP, Manager, Software Engineering (2014 - 2017)</span><br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Software Engineer (2012 - 2014)</span><br /><br />
+					<div class='SubHeader'>Acadian Asset Management - IT / Data Engineering</div> | Boston, MA<br />
+					<div>
+						<span class='SkillHeader'>Senior Software Engineer - AVP, Manager, Software Engineering</span>
+						<span> | 2012 - 2017</span>
+					</div>
 					<ul>
-						<li>Led a software engineering team consisting of 7 developers focused on large transformational projects</li>
-						<li>Interacted and provided technical support to front office research, trading and portfolio management functions</li>
-						<li>Intimately involved in the documentation and reengineering of the trading life cycle</li>
-						<li>Integrated new data with existing sources including semi-structured broker and text data</li>		
-						<li>Built and maintained an Operational Data Store and Data Marts to support reporting and analytics</li>
-						<li>Led modernization efforts to standardize data access and adopt new tools for visualization and analytics</li>
+						<li>Led a team of 7 engineers modernizing data pipelines, reporting infrastructure, and analytics platforms for front-office users.</li>
+						<li>Integrated semi-structured and real-time data into risk and portfolio management systems.</li>
+						<li>Built operational data stores and analytics APIs supporting research and trading teams.</li>
 					</ul>
-				</li>
-				<br />
-				<liv>
-					<div class='SubHeader'>2008 - 2012</div>: Monster.com<br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Manager - Global Data Warehousing (2011 - 2012)</span><br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Data Warehouse Developer - Global Data Warehousing (2010 - 2011)</span></br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Data Warehouse Developer - Global Data Warehousing (2008 - 2010)</span><br /><br />
+					<div class='SubHeader'>Monster.com</div> | Cambridge, MA<br />
+					<div>
+						<span class='SkillHeader'>Developer - Senior Data Warehouse Developer - Manager</span>
+						<span> | 2008 - 2012</span>
+					</div>
 					<ul>
-						<li>Experience spanned individual contributor, team lead to managing 12 developers globally in support of the global data team</li>
-						<li>Built and maintained Operational Data Stores, Data Warehouses and Data Marts to support both internal and customer facing analytics</li>
-						<li>Designed large scale transactional data processing pipelines to ingest data in near real-time</li>
-						<li>Leveraged knowledge of the Internet, Advertising and Fees business to model data in support of analytics</li>
-						<li>Followed a rigid product release cycle with classic SDLC processes, automated code testing and promotion</li>
+						<li>Managed global data warehouse team (12 devs) delivering real-time analytics pipelines and data marts for internal analytics</li>
+						<li>Designed large-scale transactional data processing pipelines supporting customer-facing analytics</li>
 					</ul>
-				</li>
-				<br />
-				<li>
-					<div class='SubHeader'>2000 - 2008</div>: Southworth International<br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Applications Developer II (2007 - 2008)</span><br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Developer / Administration (2005 - 2006)</span><br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Senior Systems Technician (2002 - 2004)</span><br />
-					<i class='fas fa-angle-double-right'></i><span class='IndentText'>Systems Technician I (2000 - 2002)</span><br />
-					<br />	
+					<div class='SubHeader'>Southworth International</div> | Portland, ME<br />
+					<div>
+						<span class='SkillHeader'>Systems Technician - Senior Systems Technician - Developer/Administration - Applications Developer II</span>
+						<span> | 2000 - 2008</span>
+					</div>
 					<ul>
-						<li>Directly responsible for the technical infrastructure covering multiple sites across the country</li>
-						<li>Built and maintained custom software to integrate ERP data directly into CAD systems</li>
-						<li>Developed a Data Warehouse system to centralize and automate reporting and ad-hoc analytics</li>
-						<li>Delivered automation software to multiple business units to streamline processes and improve data capture</li>
+						<li>Built and maintained ERP integration systems, operational data stores, and custom analytics solutions.</li>
 					</ul>
-				</li>
-			</ul>
+				</div>
+			</div>
 			<div class='Header'>Education:</div>
 			<ul>
-				<li><div class='SubHeader'>2020 - 2023</div><span class='IndentText'>Northeastern University - Bachelor of Science - BS, Analytics</span></li>
-				<li><div class='SubHeader'>1998 - 2000</div><span class='IndentText'>SMTC - Associates Degree - AS, Computer Technology</sapn></li>
-				<li><div class='SubHeader'>1994 - 1998</div><span class='IndentText'>Cony High School</span></li>
+				<li><span class='SubHeader'>Northeastern University</span><span> - Bachelor of Science - BS, Analytics | 2023</span></li>
+				<li><span class='SubHeader'>SMTC</span><span> - Associates Degree - AS, Computer Technology | 2000</sapn></li>
 			</ul>
 		</div>
 	</div>
