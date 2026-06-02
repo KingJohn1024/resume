@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+      		<style media ='all'>
+			/* Ensure page settings are respected when converting HTML to PDF via weasyprint */
+			@page { size: letter; margin: 0mm;}
+			@media print {
+				.pagebreak { page-break-before: always; margin-top: 50px;}
+				#Content {line-height: 1.45;}
+				html {font-size: 12px; }
+				ul {margin-left: 0.5em; padding-left: .5em;}
+				li {margin-left: 0.25em; padding-left: .25em;}
+			}
+			* {font-family: Georgia, serif;}
+			body { margin: 0px; padding: 0px; }
+			#TitleBlock { background-color: lightblue; height: 90px;  display: flex; flex-direction: column; align-items: center; justify-content: center;}
+			#TitleName { font-size: 28px; font-weight: bold; display: inline-block; white-space: nowrap; padding: 4px; }
+			#TitleAddress { font-size: 14px; display: inline-block; white-space: nowrap; padding: 4px; }
+			#TitleContact { font-size: 12px; display: inline-block; white-space: nowrap; padding: 4px; }
+			#SkillsBlock { display: inline; }
+			.Header {
+				font-size: 16px;
+				font-weight: bold;
+				text-decoration: underline;
+				display: inline-block;
+				margin-bottom: 0.3em;
+			}
+			.SubHeader {font-weight: bold; display: inline; }
+			.SkillHeader { font-weight: bold; }
+			.IndentText { text-indent: 1em; display: inline-block; }
+			.SubIndentText { text-indent: 2em; display: inline-block; }
+			#Content { margin: 20px; }
+      		</style>
+		<title>John King Resume</title>
+	</head>
+	<body>
+	<div id='TitleBlock'>
+		<div id='TitleName'>JOHN KING</div>
+		<div id='TitleContact'>
+			<a href='mailto:kingjohn1024@gmail.com'>kingjohn1024@gmail.com</a> |
+			<a href='https://github.com/KingJohn1024'>https://github.com/KingJohn1024</a>
+		</div>
+		<div id='TitleAddress'>
+			617-909-8404 |
+			Scituate, MA
+		</div>
+	</div>
+	<div id='Content'>
+		<div id='ObjectiveBlock'>
+			<div class='Header'>Professional Summary:</div>
+			<div>Quantitative Developer with 10+ years writing Python research infrastructure for systematic equity - from investment thesis through strategy design, backtesting, and live trading. Built and maintained the research APIs, numerical libraries, and data pipelines that backed $200M+ AUM in leveraged long/short strategies. Strong background in distributed computing (SLURM, Dask) across SQL, partitioned Parquet, and NoSQL data stores.</div>
+		</div>
+		<br />
+		<div id='SkillsBlock'>
+			<div class='Header'>Technical Skills:</div>
+			<ul>
+				<li><span class='SkillHeader'>Programming & Data</span>: Python (NumPy, Pandas, Scikit-learn, Dask, CVXPY, Gurobi), R, C#, SQL (T-SQL, MySQL, Snowflake)</li>
+				<li><span class='SkillHeader'>Data Engineering & Distributed</span>: Dask, SLURM, AWS, ETL pipelines, real-time data ingestion, S3, MongoDB, Redis</li>
+				<li><span class='SkillHeader'>Financial Data APIs & Tools</span>: Bloomberg API, Refinitiv QAI, Charles River OMS, Axioma, Northfield</li>
+				<li><span class='SkillHeader'>Quant & Numerical</span>: Factor models, time-series analysis, cross-sectional regression, portfolio optimization, ML techniques</li>
+			</ul>
+		</div>
+		<div id='ExperienceBlock'>
+			<div class='Header'>Experience:</div>
+				<div>
+					<div class='SubHeader'>Acadian Asset Management - Equity Alternatives</div> | Boston, MA<br />
+					<div><span class='SkillHeader'>VP, Portfolio Manager </span><span> | 2022 - Present</span></div>
+					<ul>
+						<li>Built the $200M+ AUM research platform from scratch: investment thesis, strategy design, backtesting, and live trading.</li>
+						<li>Wrote the Python backtesting and portfolio analytics libraries used across Equity Alternatives research, portfolio construction and trading.</li>
+						<li>Built Python risk model libraries for rebalancing, stress testing, and risk decomposition.</li>
+						<li>Collaborated with trading and treasury teams to ensure execution efficiency and cost minimization.</li>
+						<li>Built alpha attribution and risk analytics APIs for multi-prime leveraged portfolio reporting.</li>
+					</ul>
+					<div class='SubHeader'>Acadian Asset Management - Model Integration (Equity Alternatives)</div> | Boston, MA<br />
+					<div>
+						<span class='SkillHeader'>AVP, Senior Analyst -> VP, Senior Analyst -> VP, Lead Analyst</span>
+						<span> | 2017 - 2022</span>
+					</div>
+					<ul>
+						<li>Built Equity Alternatives research platform: signal APIs, analytics libraries, and factor model testing frameworks.</li>
+						<li>Wrote data pipelines and abstraction layers for equity universes, factor data, and portfolio metrics.</li>
+						<li>Automated risk, position, and exposure reporting via Bloomberg API and internal trading system integrations.</li>
+						<li>Provided technical guidance and support on research platform development and workflows.</li>
+					</ul>
+					<div class='SubHeader'>Acadian Asset Management - IT / Data Engineering</div> | Boston, MA<br />
+					<div>
+						<span class='SkillHeader'>Senior Software Engineer -> AVP, Manager, Software Engineering</span>
+						<span> | 2012 - 2017</span>
+					</div>
+					<ul>
+						<li>Led a team of 7 engineers modernizing data pipelines, reporting infrastructure, and analytics platforms for front-office users.</li>
+						<li>Built operational data stores and analytics APIs used by research and trading teams.</li>
+						<li>Introduced code review, unit testing, and CI/CD standards across the team.</li>
+					</ul>
+					<div class='SubHeader'>Monster.com</div> | Cambridge, MA<br />
+					<div>
+						<span class='SkillHeader'>Developer -> Senior Data Warehouse Developer -> Manager</span>
+						<span> | 2008 - 2012</span>
+					</div>
+					<ul>
+						<li>Managed global data warehouse team (12 engineers) delivering analytics pipelines and data marts.</li>
+						<li>Built large-scale data processing pipelines for customer-facing analytics.</li>
+					</ul>
+					<div class='SubHeader'>Southworth International</div> | Portland, ME<br />
+					<div>
+						<span class='SkillHeader'>Systems Technician -> Senior Systems Technician -> Developer/Administration -> Applications Developer II</span>
+						<span> | 2000 - 2008</span>
+					</div>
+					<ul>
+						<li>Built and maintained ERP integration systems, operational data stores, and custom analytics solutions.</li>
+					</ul>
+				</div>
+			</div>
+			<div class='Header'>Education:</div>
+			<ul>
+				<li><span class='SubHeader'>Northeastern University</span><span> - Bachelor of Science - BS, Analytics | 2023</span></li>
+				<li><span class='SubHeader'>SMTC</span><span> - Associates Degree - AS, Computer Technology | 2000</span></li>
+			</ul>
+		</div>
+	</div>
+	</body>
+</html>
